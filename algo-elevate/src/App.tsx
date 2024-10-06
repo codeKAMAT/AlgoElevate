@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 import Home from './pages/Home';
 import Classroom from './pages/Classroom/Classroom';
-import CoachBooking from './pages/CoachBooking';
+import CoachBooking from './pages/CoachBooking/CoachBooking';
 import Resume from './pages/Resume';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
@@ -55,16 +55,7 @@ function App() {
 						</PrivateRoute>
 					}
 				/>
-				{/* <Route
-					path="/classroom"
-					element={
-						<PrivateRoute>
-							<Layout>
-								<Classroom />
-							</Layout>
-						</PrivateRoute>
-					}
-				/> */}
+			
 				
 					{/* Classroom page */}
 					<Route

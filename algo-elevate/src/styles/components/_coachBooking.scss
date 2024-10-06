@@ -1,0 +1,25 @@
+.coach-booking-page {
+    .coach-list, .schedule-session, .session-details, .feedback-form {
+        margin-bottom: 2rem;
+        
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        background-color: #3DDC97;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    button:hover {
+        background-color: #2F3437;
+    }
+}
