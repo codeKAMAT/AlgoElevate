@@ -1,0 +1,90 @@
+// src/styles/components/_home.scss
+
+@import '../_variables'; // Ensure to import your variables
+
+.layout-container {
+  display: flex;
+  height: 100vh; // Make sure the full height is used
+ font-family: Courier, monospace;
+}
+
+.navbar {
+  width: 15%; // Left sidebar width
+  background-color: $primary; // Use your defined primary color
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  transition: width 0.3s; // Smooth collapse transition
+
+  &.collapsed {
+    width: 80px; // Change width on collapse if needed
+  }
+
+  .navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+
+    .profile-picture {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .logout {
+      cursor: pointer;
+      color: $secondary; // Change to your preferred color
+    }
+  }
+
+  .search-bar {
+    margin-bottom: 1rem;
+
+    input {
+      width: 100%;
+      padding: 0.813rem;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+  }
+
+  .menu {
+    a {
+      color: $secondary; // Change link color
+      text-decoration: none;
+      margin: 10px 0;
+      display: block; // Make the links block elements
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.main-content {
+  width: 85%; // Main content area width
+  padding: 1rem; // Padding for main content
+
+  .top-nav {
+    display: flex;
+    justify-content: flex-end; // Align items to the right
+    padding: .1rem; // Add some padding
+    background-color: $primary;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.4rem;
+    .MuiIconButton-root {
+      color: $text-primary; // Define your primary text color
+      margin-left: 15px; // Space between icons
+      &:hover {
+        color: lighten($text-primary, 20%); // Change color on hover
+      }
+    }
+  }
+
+  
+}

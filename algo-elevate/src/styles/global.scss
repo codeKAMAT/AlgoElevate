@@ -1,0 +1,34 @@
+// global.scss
+
+// Import Variables
+@import './_variables.scss'; // Ensure the path is correct
+
+// Global Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; // Include padding and border in the element's total width and height
+}
+
+body {
+  font-family: $font-family; // Use the font family from variables
+  background-color: #f4f4f4; // Light background color for the body
+  color: $text-primary; // Use text color from variables
+  line-height: 1.6; // Improve readability
+}
+
+// Link Styles
+a {
+  color: inherit; // Inherit color from the parent
+  text-decoration: none; // Remove underline from links
+  &:hover {
+    text-decoration: underline; // Underline on hover
+  }
+}
+
+// Additional Global Styles
+.container {
+  max-width: 1200px; // Set max-width for container
+  margin: 0 auto; // Center align
+  padding: 20px; // Add padding
+}

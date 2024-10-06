@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <!-- Background -->
+  <rect width="400" height="600" fill="#2F3437"/>
+  
+  <!-- Abstract code lines -->
+  <g opacity="0.1">
+    <path d="M50 100 L350 100" stroke="#EEEEEE" stroke-width="2"/>
+    <path d="M100 150 L300 150" stroke="#EEEEEE" stroke-width="2"/>
+    <path d="M150 200 L250 200" stroke="#EEEEEE" stroke-width="2"/>
+    <path d="M50 250 L350 250" stroke="#EEEEEE" stroke-width="2"/>
+    <path d="M100 300 L300 300" stroke="#EEEEEE" stroke-width="2"/>
+    <path d="M150 350 L250 350" stroke="#EEEEEE" stroke-width="2"/>
+  </g>
+  
+  <!-- Growth curve (without arrowhead) -->
+  <path d="M100 500 Q200 300 300 100" fill="none" stroke="#3DDC97" stroke-width="4" opacity="0.6"/>
+  
+  <!-- Code symbols -->
+  <text x="150" y="450" font-family="Courier, monospace" font-size="40" fill="#3DDC97" opacity="0.8">&lt;/&gt;</text>
+  <text x="250" y="200" font-family="Courier, monospace" font-size="40" fill="#3DDC97" opacity="0.8">{}</text>
+  
+  <!-- AlgoElevate logo -->
+  <g transform="translate(200 300) scale(0.8)">
+    <circle cx="0" cy="0" r="48" fill="#2F3437" stroke="#3DDC97" stroke-width="2"/>
+    <path d="M-20 15 L0 -25 L20 15 Z" fill="none" stroke="#3DDC97" stroke-width="4"/>
+    <text x="0" y="25" font-family="Courier, monospace" font-size="8" fill="#EEEEEE" text-anchor="middle">&lt;AlgoElevate /&gt;</text>
+  </g>
+  
+  <!-- Tagline in monospace font -->
+  <text x="200" y="550" font-family="Courier, monospace" font-size="24" fill="#EEEEEE" text-anchor="middle">Code. Learn. Elevate.</text>
+</svg>
