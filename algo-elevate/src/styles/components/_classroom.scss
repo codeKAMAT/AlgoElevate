@@ -1,15 +1,35 @@
-// src/styles/components/_classroom.scss
-
-.classroom {
-    padding: 20px;
-    background-color: $background-color; // Use your defined background color
-  
-    h1 {
+.classroom-page {
+    h2 {
       margin-bottom: 20px;
     }
   
-    p {
-      margin-bottom: 10px;
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+  
+      .course-card {
+        padding: 20px;
+        background-color: #f7f7f7;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.2s ease;
+  
+        &:hover {
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+  
+        h3 {
+          font-size: 1.2rem;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          font-size: 0.9rem;
+          color: #888;
+        }
+      }
     }
   }
   

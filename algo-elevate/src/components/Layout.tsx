@@ -30,7 +30,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 					<input type="text" placeholder="Search..." />
 				</div>
 				<div className="menu">
-					<a href="/classroom">Classroom</a>
+					<a href="/">Home</a>
+					<a href="/classrooms">Classroom</a>
 					<a href="/coach-booking">Coaching</a>
 					<a href="/resume">Resume</a>
 					<a href="/settings">Settings</a>
