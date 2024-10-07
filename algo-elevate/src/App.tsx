@@ -19,6 +19,7 @@ import { auth } from './firebase'; // Firebase auth object
 import { onAuthStateChanged } from 'firebase/auth';
 import Layout from './components/Layout';
 import CourseCurriculum from './pages/Classroom/CourseCurriculum';
+import Settings from './pages/Settings';
 
 function App() {
 	const dispatch = useDispatch();
@@ -102,6 +103,19 @@ function App() {
 						</PrivateRoute>
 					}
 				/>
+                <Route
+					path="/settings"
+					element={
+						<PrivateRoute>
+							<Layout>
+								<Settings />
+							</Layout>
+						</PrivateRoute>
+					}
+				/>
+
+
+
 			</Routes>
 		</Router>
 	);
