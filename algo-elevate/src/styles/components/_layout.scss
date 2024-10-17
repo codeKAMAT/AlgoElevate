@@ -57,7 +57,7 @@
       text-decoration: none;
       margin: 10px 0;
       display: block; // Make the links block elements
-
+    word-wrap: break-word;
       &:hover {
         text-decoration: underline;
       }
